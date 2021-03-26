@@ -1,0 +1,1088 @@
+<!--
+   Template Name: Newsletter
+   Template URI: N/a
+   Description: Mail Template.
+   Author: Marcus Podorf
+   Author URI: https://marcuspodorf.com
+   Version: 1.2
+   
+   -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
+   xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width,initial-scale=1" />
+   <meta name="x-apple-disable-message-reformatting" />
+   <title>{subject}</title>
+
+   <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+      #outlook a {
+         padding: 0;
+      }
+
+      body {
+         width: 100% !important;
+         -webkit-text-size-adjust: 100%;
+         -ms-text-size-adjust: 100%;
+         margin: 0 !important;
+         padding: 0 !important;
+      }
+
+      .ExternalClass {
+         width: 100%;
+      }
+
+      .ExternalClass,
+      .ExternalClass p,
+      .ExternalClass span,
+      .ExternalClass font,
+      .ExternalClass td,
+      .ExternalClass div {
+         line-height: 100%;
+      }
+
+      .bodytbl {
+         margin: 0;
+         padding: 0;
+         width: 100% !important;
+      }
+
+      img {
+         outline: none;
+         text-decoration: none;
+         -ms-interpolation-mode: bicubic;
+         display: block;
+         max-width: 100%;
+         height: auto;
+         width: 100%;
+
+      }
+
+      a img {
+         border: none;
+      }
+
+      p {
+         margin: 1em 0;
+      }
+
+      table {
+         border-collapse: collapse;
+         mso-table-lspace: 0pt;
+         mso-table-rspace: 0pt;
+      }
+
+      table td {
+         border-collapse: collapse;
+      }
+
+      .o-fix table,
+      .o-fix td {
+         mso-table-lspace: 0pt;
+         mso-table-rspace: 0pt;
+      }
+
+      body,
+      .bodytbl {
+         background-color: #F3F4F4
+            /*Background Color*/
+         ;
+      }
+
+      table {
+         font-family: 'Open Sans', sans-serif;
+         font-size: 14px;
+         color: #000000;
+      }
+
+      td,
+      p {
+         line-height: 17px;
+         color: #000000;
+      }
+
+      td,
+      tr {
+         padding: 0;
+      }
+
+      ul,
+      ol {
+         margin-top: 24px;
+         margin-bottom: 24px;
+      }
+
+      li {
+         line-height: 24px;
+      }
+
+      a {
+         color: #000000
+            /*Contrast*/
+         ;
+         text-decoration: none;
+         padding: 2px 0px;
+      }
+
+      a:link {
+         color: #000000;
+         font-size: 12px;
+         font-style: italic;
+      }
+
+      a:visited {
+         color: #000000;
+      }
+
+      a:hover {
+         color: #000000;
+      }
+
+      .h1,
+      .h1 p {
+         font-family: 'Open Sans', sans-serif;
+         font-size: 26px;
+         letter-spacing: -1px;
+         margin-bottom: 16px;
+         margin-top: 2px;
+         line-height: 30px;
+      }
+
+      .h2,
+      .h2 p {
+         font-family: 'Open Sans', sans-serif;
+         font-size: 20px;
+         letter-spacing: 0;
+         margin-top: 2px;
+         line-height: 30px;
+      }
+
+      .bttn.under a.link {
+         border-bottom: 2px solid #000000;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+         font-family: 'Open Sans', sans-serif;
+         font-weight: normal;
+      }
+
+      h1 {
+         font-size: 21px;
+         line-height: 26px;
+         margin: 0px;
+      }
+
+      h2 {
+         font-size: 18px;
+         margin-bottom: 12px;
+         margin-top: 2px;
+         line-height: 24px;
+      }
+
+      h3 {
+         font-size: 14px;
+         margin-bottom: 12px;
+         margin-top: 2px;
+         line-height: 24px;
+      }
+
+      h4 {
+         font-size: 14px;
+         font-weight: bold;
+      }
+
+      h5 {
+         font-size: 13px;
+      }
+
+      h6 {
+         font-size: 13px;
+         font-weight: bold;
+      }
+
+      h1 a,
+      h2 a,
+      h3 a,
+      h4 a,
+      h5 a,
+      h6 a {
+         color: #5ca8cd;
+      }
+
+      h1 a:active,
+      h2 a:active,
+      h3 a:active,
+      h4 a:active,
+      h5 a:active,
+      h6 a:active {
+         color: #5ca8cd !important;
+      }
+
+      h1 a:visited,
+      h2 a:visited,
+      h3 a:visited,
+      h4 a:visited,
+      h5 a:visited,
+      h6 a:visited {
+         color: #5ca8cd !important;
+      }
+
+      .wrap.body,
+      .wrap.header,
+      .wrap.footer {
+         background-color: #FFFFFF
+            /*Body Background*/
+         ;
+      }
+
+      .padd {
+         width: 24px;
+      }
+
+      .small {
+         font-size: 11px;
+         line-height: 18px;
+      }
+
+      .separator {
+         border-top: 1px dotted #E1E1E1
+            /*Separator Line*/
+         ;
+      }
+
+      .btn {
+         margin-top: 10px;
+         display: block;
+      }
+
+      .btn img {
+         display: inline;
+      }
+
+      .subline {
+         line-height: 18px;
+         font-size: 16px;
+         letter-spacing: -1px;
+      }
+
+      table.textbutton td {
+         background: #efefef
+            /*Text Button Background*/
+         ;
+         padding: 3px 14px 3px 14px;
+         color: #585858;
+         display: block;
+         height: 24px;
+         border: 1px solid #FEFEFE  ;
+         vertical-align: top;
+         margin-bottom: 3px;
+         border: 1px solid #ccc;
+         -webkit-border-radius: 2px;
+         border-radius: 2px;
+         margin-right: 4px;
+         margin-bottom: 4px;
+      }
+
+      table.textbutton a {
+         color: #585858;
+         font-size: 14px;
+         font-weight: normal;
+         line-height: 14px;
+         width: 100%;
+         display: inline-block;
+      }
+
+      table.textbutton a {
+         color: #585858;
+         font-size: 14px;
+         font-weight: normal;
+         line-height: 14px;
+         width: 100%;
+         display: inline-block;
+      }
+
+      div.preheader {
+         line-height: 0px;
+         font-size: 0px;
+         height: 0px;
+         display: none !important;
+         display: none;
+         visibility: hidden;
+      }
+
+      /*  CSS  */
+      table {
+         border-spacing: 0;
+      }
+
+      td {
+         padding: 0;
+      }
+
+      /* Wrapper Inner */
+      .newsletter_wrapper {
+         width: 100%;
+         table-layout: fixed;
+         background: #f9f9f9;
+         display: inline-block;
+      }
+
+      .newsletter_outter {
+         min-width: 375px;
+         max-width: 562px;
+         margin: 0 auto;
+      }
+
+      .newsletter_inner {
+         margin: 18px;
+         background: #fff;
+         padding: 0px 29px;
+      }
+
+      /* Header Section Logo */
+      .img_m {
+         width: 200px;
+      }
+
+      .text_bold {
+         font-weight: 700;
+      }
+
+      td p {
+         font-size: 12px;
+         margin: 0px;
+         padding: 0px;
+      }
+
+      td a {
+         padding: 0px;
+         margin: 0px;
+         color: #000000;
+      }
+
+      .bttn.border_bttn {
+         text-align: center;
+      }
+
+      .bttn.border_bttn a {
+         border: 2px solid #E6E6E6;
+         padding: 7px 0px 7px 0px;
+         display: inline-block;
+         line-height: 25px;
+         position: relative;
+         width: 180px;
+         margin: 0 auto;
+         text-align: center;
+      }
+
+      .bttn.border_bttn a span {
+         margin-left: 8px;
+         font-size: 20px;
+         position: absolute;
+         font-style: initial;
+      }
+
+      .footer td {
+         line-height: 14px;
+      }
+
+      .footer p {
+         line-height: 14px;
+         font-size: 10px;
+      }
+
+      .footer p span {
+         display: block;
+      }
+
+      .social_links a {
+         color: #000;
+         font-size: 10px;
+         font-family: 'Open Sans', sans-serif;
+         font-style: italic;
+         text-decoration: underline;
+         display: block;
+         line-height: 15px;
+      }
+
+      .style_a a {
+         color: #000;
+         font-size: 10px;
+         font-family: 'Open Sans', sans-serif;
+         font-style: italic;
+         text-decoration: underline;
+         display: inline-block;
+         line-height: 10px;
+      }
+
+      .copy_right p span {
+         display: inline;
+      }
+
+      .bottom_inner {
+         margin: 14px;
+         padding: 0px 29px;
+         text-align: center;
+      }
+
+      .bottom_inner td p {
+         font-size: 10px;
+         margin: 0px;
+         padding: 0px;
+         font-style: italic;
+      }
+
+
+      /* Responsive Css */
+      @media only screen and (max-width: 599px) {
+         body {
+            -webkit-text-size-adjust: 120% !important;
+            -ms-text-size-adjust: 120% !important;
+         }
+
+         table {
+            font-size: 15px;
+         }
+
+         .subline {
+            float: left;
+         }
+
+         .padd {
+            width: 12px !important;
+         }
+
+         .wrap {
+            width: 96% !important;
+         }
+
+         .wrap table {
+            width: 100% !important;
+         }
+
+         .wrap img {
+            max-width: 100% !important;
+            height: auto !important;
+         }
+
+         .wrap .s {
+            width: 100% !important;
+         }
+
+         .wrap .m-0 {
+            width: 0;
+            display: none;
+         }
+
+         .wrap .m-b {
+            margin-bottom: 24px !important;
+         }
+
+         .wrap .m-b,
+         .m-b img {
+            display: block;
+            min-width: 100% !important;
+            width: 100% !important;
+         }
+
+         table.textbutton td {
+            height: auto !important;
+            padding: 8px 14px 8px 14px !important;
+         }
+
+         table.textbutton a {
+            font-size: 18px !important;
+            line-height: 26px !important;
+         }
+      }
+
+      @media only screen and (max-width: 285px) {
+         .bttn.border_bttn a {
+            border: 3px solid #E6E6E6;
+            padding: 7px 0px 7px 0px;
+            position: relative;
+            width: 160px;
+            margin: 0 auto;
+            text-align: center;
+         }
+      }
+
+      @media only screen and (max-width: 479px) {}
+
+      @media only screen and (max-width: 320px) {}
+
+      @media only screen and (min-device-width: 320px) and (max-device-width: 340px) {
+         h1 {
+            font-size: 19px;
+            line-height: 25px;
+            margin: 0px;
+         }
+      }
+
+      @media only screen and (min-device-width: 280px) and (max-device-width: 320px) {
+         h1 {
+            font-size: 16px;
+            line-height: 21px;
+            margin: 0px;
+         }
+
+         .newsletter_inner {
+            margin: 18px;
+            background: #fff;
+            padding: 0px 25px;
+         }
+      }
+
+      @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {}
+
+      @media only screen and (min-device-width: 414px) and (max-device-width: 736px) {}
+   </style>
+</head>
+
+<body>
+   <div class="newsletter_wrapper">
+      <div class="newsletter_outter">
+         <div class="newsletter_inner">
+
+            <!-- HEADER LOGO AREA START -->
+            <modules lebel="Header, fix/static" auto>
+               <table style="text-align: center; width:100%;">
+                  <tbody>
+                     <tr>
+                        <td style="display: inline-block; margin:52px  0px; margin-bottom: 40px;">
+                           <img
+                              src="https://tomlogisch.com/wp-content/uploads/2020/11/201111_tomlogischcom_logo_mobile_@2x.png"
+                              class="img_m" border="0" editable label="Logo Image" alt="">
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </modules>
+            <!-- HEADER LOGO AREA END -->
+            
+
+            <!-- HEADER KEY MESSAGE START -->
+            <modules lebel="Module: Key message,  Header module" auto>
+               <table style="text-align: left; width:100%;">
+                  <tbody>
+                     <tr>
+                        <td>
+                           <h1 class="text_bold">Here goes an incredibly good overarching idea or key message for the
+                              news</h1>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </modules>
+         <!-- HEADER KEY MESSAGE END -->
+
+
+            <!-- KEY MESSAGE START -->
+            <modules label="Key message title" auto>
+               <table style="text-align: left; width:100%;">
+                  <tbody>
+                     <tr>
+                        <td>
+                           <h1 class="text_bold">Here goes an incredibly good overarching idea or key message for the
+                              news</h1>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="height: 65px;"></td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <p>Dear reader,</p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="height: 20px;"></td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <p>Here goes some neat intro text. It can be about the topic, a specific partner or a
+                              product. Keep it smart, and deliver on the benefits. Do not just talk about the product,
+                              tell your readers a convincing story that also contains valuable insights that they get
+                              from tom logisch and the owner first-hand.</p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="height: 19px;"></td>
+                     </tr>
+                     <tr>
+                        <td style="font-style: italic;">
+                           <p>Yours,</p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="font-style: italic;">
+                           <p>Thomas Logisch</p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="height: 60px;"></td>
+                     </tr>
+                  </tbody>
+               </table>
+            </modules>
+            <!-- KEY MESSAGE END -->
+
+            <!-- SECTION WITH LARGE IMAGE START-- 01 -->
+            <module label="Headline With Large Image section" auto>
+               <table style="text-align: left; width:100%;">
+                  <tbody>
+                     <tr>
+                        <td>
+                           <h1 class="text_bold">Here goes a headline for the section with large images, up to three
+                              lines </h1>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="height: 22px;"></td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <img class="img_s" src="https://dummyimage.com/282x160/000/fff" width="282" height="160"
+                              border="0" editable label="Image max width 282 pixel" alt="">
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="height: 14px;"> </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <p>Here goes some smart and bold copy text. Lorem ipsum dolor sit amet, consetetur sadipscing
+                              elitr. Por scientie, musica, sport etc, litot Europa usa li sam. Lorem ipsum dolor sit
+                              amet, consetetur sadipscing elitr. Por scientie, musica, sport etc, litot Europa usa li
+                              sam. Lorem ipsum dolor sit amet, consetetur sadipscing elitr. Por scientie, musica, sport
+                              etc, litot Europa usa li sam. </p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="height: 13px;"></td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <div class="bttn under">
+                              <a style="color: #000000;" class="link" href="#" editable label="Read More">Read More
+                                 <span>+</span> </a>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="height: 70px;"></td>
+                     </tr>
+                  </tbody>
+               </table>
+            </module>
+            <!-- SECTION WITH LARGE IMAGE END-- 01  -->
+
+            <!-- SECTION HEADLINE WITHOUT IMAGE START-- 02 -->
+            <module label="Headline without image section" auto>
+               <table style="text-align: left; width:100%;">
+                  <tbody>
+                     <tr>
+                        <td>
+                           <h1 class="text_bold">Here goes a headline for the section without image </h1>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="height: 18px;"> </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <p>Here goes some smart and bold copy text. Lorem ipsum dolor sit amet, consetetur sadipscing
+                              elitr. Por scientie, musica, sport etc, litot Europa usa li sam. Lorem ipsum dolor sit
+                              amet, consetetur sadipscing elitr. Por scientie, musica, sport etc, litot Europa usa li
+                              sam. Lorem ipsum dolor sit amet, consetetur sadipscing elitr. Por scientie,</p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="height: 30px;"></td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <div class="bttn border_bttn">
+                              <a style="color: #000000; border: 3px solid #E6E6E6;" class="link" href="#" editable
+                                 label="Read More">Read More <span>+</span> </a>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="height: 82px;"></td>
+                     </tr>
+                  </tbody>
+               </table>
+            </module>
+            <!--  SECTION HEADLINE WITHOUT IMAGE END-- 02 -->
+
+            <!-- SECTION IMAGE WITH CONTENT START -- 03 -->
+            <module label="Image with content" auto>
+               <table style="text-align: left; width:100%;">
+                  <tbody>
+                     <tr>
+                        <td>
+                           <img class="img_s" src="https://dummyimage.com/282x242/000/fff" width="282" height="242"
+                              border="0" editable label="Image max width 282 pixel" alt="">
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="height: 13px;"> </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <p>Here goes some smart and bold copy text. Lorem ipsum dolor sit amet, consetetur sadipscing
+                              elitr. Por scientie, musica, sport etc, litot Europa usa li sam. Lorem ipsum dolor sit
+                              amet, consetetur sadipscing elitr. Por scientie, musica, sport etc, litot Europa usa li
+                              sam. Lorem ipsum dolor sit </p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="height: 62px;"> </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </module>
+            <!-- SECTION IMAGE WITH CONTENT END -- 03 -->
+
+            <!-- SECTION SUB HEADING WITH CONTENT START -- 04 -->
+            <module label="Sub Heading with content" auto>
+               <table style="text-align: left; width:100%;">
+                  <tbody>
+                     <tr>
+                        <td>
+                           <h1 class="text_lite">Here goes a subline for additional content sections within specific
+                              topic </h1>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="height: 22px;"> </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <p>Here goes some smart and bold copy text. Lorem ipsum dolor sit amet, consetetur sadipscing
+                              elitr. Por scientie, musica, sport etc, litot Europa usa li sam. Lorem ipsum dolor sit
+                              amet, consetetur sadipscing elitr. Por scientie, musica, sport etc, litot Europa usa li
+                              sam. Lorem ipsum dolor sit.</p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="height: 74px;"> </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </module>
+            <!--  SECTION SUB HEADING WITH CONTENT END -- 04 -->
+
+            <!-- SECTION HEADLINE WITH LARGE IMAGE START-- 05 -->
+            <module label="Heading with large image" auto>
+               <table style="text-align: left; width:100%;">
+                  <tbody>
+                     <tr>
+                        <td>
+                           <h1 class="text_lite">Here goes a subline for additional content sections within specific
+                              topic</h1>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="height: 22px;"></td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <img class="img_s" src="https://dummyimage.com/282x160/000/fff" width="282" height="160"
+                              border="0" editable label="Image max width 282 pixel" alt="">
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="height: 13px;"> </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <p>Here goes some smart and bold copy text. Lorem ipsum dolor sit amet, consetetur sadipscing
+                              elitr. Por scientie, musica, sport etc, litot Europa usa li sam. Lorem ipsum dolor sit
+                              amet, consetetur sadipscing elitr. Por scientie, musica, sport etc, litot Europa usa li
+                              sam. Lorem ipsum dolor sit.</p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="height: 15px;"></td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <div class="bttn under">
+                              <a style="color: #000000;" class="link" href="#" editable label="Read More">Read More
+                                 <span>+</span> </a>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="height: 72px;"></td>
+                     </tr>
+                  </tbody>
+               </table>
+            </module>
+            <!--  SECTION HEADLINE WITH LARGE IMAGE END--- 05 -->
+
+            <!--  SECTION HEADLINE WITHOUT IMAGE START- -- 06 -->
+            <module label="Headline with large image" auto>
+               <table style="text-align: left; width:100%;">
+                  <tbody>
+                     <tr>
+                        <td>
+                           <h1 class="text_bold">Here goes a headline for the section without image</h1>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="height: 16px;"> </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <h1 class="text_lite">Here goes a headline for the section without image </h1>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="height: 30px;"> </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </module>
+            <!-- SECTION HEADLINE WITHOUT IMAGE START- -- 06  -->
+
+            <!-- PRODUCT INFORMATIONS START -- 07 -->
+            <module label="Product informations" auto>
+               <table style="text-align: left; width:100%;">
+                  <tbody>
+                     <tr>
+                        <td>
+                           <h1 class="text_bold">We know everything about our products.</h1>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="height: 16px;"></td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <p>Do you have a question or wish to receive a price quote? We will happily advise you and
+                              provide an offer with prices and delivery times for our products and solutions.</p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="height: 28px;"></td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <div class="bttn border_bttn">
+                              <a style="color: #000000;" class="link" href="#" editable label="Read More">get in touch
+                                 <span>+</span> </a>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="height: 28px;"></td>
+                     </tr>
+                  </tbody>
+               </table>
+            </module>
+            <!--  PRODUCT INFORMATIONS START -- 07 -->
+
+            <!-- QUESTIONS SECTION START -- 08 -->
+            <module label="Questions section" auto>
+               <table style="text-align: left; width:100%;">
+                  <tbody>
+                     <tr>
+                        <td>
+                           <h1 class="text_bold">Do you have a question or wish to receive a price quote? </h1>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="height: 16px;"></td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <p>If there’s anything we can help you with, please contact us.</p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="height: 28px;"></td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <div class="bttn border_bttn">
+                              <a style="color: #000000;" class="link" href="#" editable label="Read More">get in touch
+                                 <span>+</span> </a>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="height: 28px;"></td>
+                     </tr>
+                  </tbody>
+               </table>
+            </module>
+            <!-- QUESTIONS SECTION END -- 08 -->
+
+            <!-- SERVICE DISCRIPTIONS START -- 09 -->
+            <module label="Service discriptions" auto>
+               <table style="text-align: left; width:100%;">
+                  <tbody>
+                     <tr>
+                        <td>
+                           <h1 class="text_bold">Smaller questions and challenges can often be clarified in a joint
+                              dialogue without the need to travel. </h1>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="height: 19px;"></td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <p>In addition to our on-site support, we offer remote consulting and assistance. You can
+                              book an individual, 30-minute appointment at any time. As a rule, Thomas Logisch will
+                              advise you personally via Apple FaceTime, a simple phone call or Microsoft Teams video
+                              chat.</p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="height: 28px;"></td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <div class="bttn border_bttn">
+                              <a style="color: #000000;" class="link" href="#" editable label="Read More">schedule
+                                 <span>+</span> </a>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="height: 115px;"></td>
+                     </tr>
+                  </tbody>
+               </table>
+            </module>
+            <!-- SERVICE DISCRIPTIONS END -- 09 -->
+
+
+            <module label="Footer section" auto>
+               <table class="footer">
+                  <tbody>
+                     <tr>
+                        <td>
+                           <img src="https://i.imgur.com/yFgYAdy.png" alt="" style=" width: 86px;">
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="height: 12px;"></td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <p>
+                              tom logisch – exploring the world in a better way UG 
+                              <span>(haftungsbeschränkt) </span>
+                              <span>rodelberg 47 </span> 
+                              <span>14532 kleinmachnow</span> 
+                              <span>germany</span>
+                              <br>
+                              <span>tel: +49 33203 71501</span>
+                              <span>fax: +49 33203 71504 </span>
+                              <br>
+                              <span>info@tomlogisch.com </span>
+                              <span>www.tomlogisch.com </span>
+                           </p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="height: 10px;"></td>
+                     </tr>
+   
+                     <tr class="social_links">
+                        <td>
+                           <a href="#">linkedin +</a>
+                           <a href="#">facebook +</a>
+                           <a href="#">whatsapp +</a>
+                           <a href="#">instagram +</a>
+                        </td>
+                     </tr>
+   
+                     <tr>
+                        <td style="height: 15px;"></td>
+                     </tr>
+   
+                     <tr>
+                        <td>
+                           <p>Review our data protection standards here:</p>
+                        </td>
+                     </tr>
+   
+                     <tr class="style_a">
+                        <td>
+                           <a href="#">Privacy policy of tom logisch +</a>
+                        </td>
+                     </tr>
+   
+                     <tr>
+                        <td style="height: 15px;"></td>
+                     </tr>
+                     
+   
+                     <tr>
+                        <td>
+                           <p>
+                              Your right of objection: 
+                              <span>You can object to your consent to the processing of your </span>personal data at any time. Please click here: 
+                           </p>
+                        </td>
+                     </tr>
+   
+                     <tr class="style_a">
+                        <td>
+                           <a href="#">Unsubscribe +</a>
+                        </td>
+                     </tr>
+   
+                     <tr>
+                        <td style="height: 15px;"></td>
+                     </tr>
+   
+                     <tr class="copy_right">
+                        <td>
+                           <p>©2021 tom logisch<sup>®</sup>. All rights reserved.
+                           <span class="style_a"><a href="#">Site notice +</a></span>
+                           </p>
+                        </td>
+                     </tr>
+   
+                     <tr>
+                        <td style="height: 26px;"></td>
+                     </tr>
+                  </tbody>
+               </table>
+
+            </module>
+
+         </div>
+
+         <div class="bottom_inner" style="text-align: center;">
+            <table style="display: inline-block;">  
+               <tr>
+                  <td>
+                     <p>{webversion} +| {unsubscribe} +</p>
+                  </td>
+               </tr>
+            </table>
+         </div>
+
+      </div>
+   </div>
+</body>
+
+</html>
